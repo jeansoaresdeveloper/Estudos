@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{template.html}"
+>
+<head>
+    <title>Lista de filmes</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <h1>Lista de filmes</h1>
+        <a href="/movies/form">Novo</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Duração</th>
+                    <th>Ano de lançamento</th>
+                    <th>Gênero</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="movie : ${listMovie}">
+                    <td th:text="${movie.getName()}"></td>
+                    <td th:text="${movie.getDuration()}"></td>
+                    <td th:text="${movie.getYearRelease()}"></td>
+                    <td th:text="${movie.getMovieGenre()}"></td>
+                    <td>
+                        <a th:href="@{/movies/form?idMovie={idMovie}(idMovie=${movie.getId()})}">Editar</a>
+                        <form action="/movies" method="post">
+                            <input type="hidden" name="_method" value="delete">
+                            <input type="hidden" name="idMovie" th:value="${movie.getId()}">
+                            <input type="submit" value="Excluir">
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

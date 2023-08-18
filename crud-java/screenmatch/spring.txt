@@ -1,0 +1,16 @@
+Mapeando informações com Spring
+JDBC - Tecnologia do Java
+Java Database Connectivity
+Era utilizado antes 
+
+Framework Hibernate
+JPA - Java Persistence API
+
+Depois criar a conexão com o banco de dados em: src/main/resources/application.properties
+
+Convenção -> Repository
+Exemplo: MovieRepository
+
+public interface MovieRepository extends JpaRepository<Movie, Long> {}
+Movie -> Classe que irá representar
+Long -> Tipo da chave primária
