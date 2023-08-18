@@ -1,6 +1,7 @@
-Crud de filmes utilizando Java e Spring - Alura.
+### Crud de filmes utilizando Java e Spring - Alura.
 
-Base SQL:
+Base SQL: </br>
+```
     CREATE DATABASE screenmatch;
     use screenmatch;
 
@@ -12,8 +13,10 @@ Base SQL:
         movie_genre VARCHAR(100),
         PRIMARY KEY(id)
     );
-
-Altere o arquivo src/main/resources/application.properties com as configurações do seu banco.
-spring.datasource.url=jdbc:mysql://IP:PORTA/screenmatch?createDatabaseIfNotExist=true
-spring.datasource.username=SEU_USUARIO
-spring.datasource.password=SUA_SENHA
+```
+Altere o arquivo src/main/resources/application.properties com as configurações do seu banco. </br></br>
+```
+    spring.datasource.url=jdbc:mysql://IP:PORTA/screenmatch?createDatabaseIfNotExist=true </br>
+    spring.datasource.username=SEU_USUARIO </br>
+    spring.datasource.password=SUA_SENHA
+```
