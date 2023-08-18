@@ -1,0 +1,46 @@
+Navegação com roteamento - 03
+
+Navegação dinâmica -> Router outlet
+
+Configuração de rotas
+const routes = [
+	{
+		path: 'criarPensamento',
+		component: criarPensamentoComponent
+	}
+]
+
+Sempre que criar uma rota com caminho vazio deve adicionar o pathMatch
+Ir para rota routerLink
+
+Diretivas - 04
+
+*ngFor -> É o for no angular, iterar sobre uma lista ou mostrar algo repetidas vezes -> *ngFor="let pensamento of listaPensamentos"
+
+Comunicação entre componentes -> @input no component filho
+
+if -> *ngIf
+ng-template não é renderizado por padrão -> Precisa instruir o angular para ele ser renderizado, com isso podemos utiliza-lo 
+para o else
+
+ng-class -> Estilos de forma dinâmica
+
+Comunicação com o backend - 05
+Está sendo utilizado um backend em json utilizando uma lib json-server
+Foi criado uma pasta /backend com o arquivo bd.json e um package.json para rodar a aplicação
+
+Interface -> Um modelo a ser seguido pelo classe que implementa essa interface garantindo tipagem e valores correstos
+Services -> Criado para realizar a comunicação entre o template e o backend
+Como criar -> ng generate service caminho/nomeservice
+
+Injeção de dependências -> Injetar classes, atributos, métodos ou funções que a classe dependa para funcionar
+
+Requisições HTTP - 06
+HTTPCLIENT -> Crud
+
+ngOnInit -> Tudo dentro dele será executado quando o componente for carregado
+
+observable -> Faz parte da biblioteca rxjs que está sendo utilizada internamente no angular
+Quando receber um observable pode utilizar o subscribe
+
+ActivatedRoute -> Uma classe que fornece informações sobre os parametros as rotas e os caminhos

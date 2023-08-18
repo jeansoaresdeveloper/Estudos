@@ -1,0 +1,23 @@
+Curso de Angular
+Instalar angular -> npm install -g @angular/cli
+Ver versão do angular -> Ng version
+
+Criar um novo projeto -> ng new *nomeDoProjeto
+Abrir projeto -> cd *nomeDoProjeto
+Executar projeto -> ng serve --open
+
+app.module.ts -> @NgModule: Colocar todos os componentes
+
+Criar componente -> ng generate component *nomeDoComponente
+
+Adicionar comportamento
+Property binding -> O arquivo responsável por adicionar comportamento nos conteúdos é o arquivo Component
+
+Fluxo de dados dentro de um componente -> Associação de dados entre o Template e o Component utilizando colchetes [value]=""
+
+event binding -> Adicionar ações ou disparos de comportamento nos componentes
+
+two way data binding ->  Fluxo bidirecional é enviado dados do Template para o Component e vice versa ao mesmo tempo
+    [(ngModel)] -> Formato para enviar dados bidirecional
+
+Navegação entre componentes utilizando rotas -> 3 Navegação com roteamento

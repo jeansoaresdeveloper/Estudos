@@ -1,0 +1,22 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "Um teste de pensamento",
+      "autoria": "Anaximandro",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Existe céu embaixo",
+      "autoria": "Anaximandro",
+      "modelo": "modelo2"
+    },
+    {
+      "conteudo": "Já era meu acabei",
+      "autoria": "jean",
+      "modelo": "modelo3",
+      "id": 3
+    }
+  ]
+}
