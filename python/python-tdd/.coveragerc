@@ -1,0 +1,8 @@
+[run]
+
+[report]
+exclude_lines =
+    def __str__
+
+[html]
+directory = coverage_relatorio_html
