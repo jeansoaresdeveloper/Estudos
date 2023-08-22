@@ -18,3 +18,13 @@ Para alterar os parametros de paginação e ordenação passados na url:
 spring.data.web.pageable.page-parameter=pagina
 spring.data.web.pageable.size-parameter=tamanho
 spring.data.web.sort.sort-parameter=ordem
+
+Instalar dependencias do spring security
+Por padrão após instalar essas dependencias todas as requisições são bloqueadas
+é necessário passar um login (user) -> por padrão
+E a senha gerada pelo spring
+
+A classe para autenticação deve ser um service e implementar um UserDetailsService
+
+SecurityConfiguration -> Concentrar configurações de segurança
+Classe do spring a se chamada para o processo de autenticação -> AuthenticationManager
