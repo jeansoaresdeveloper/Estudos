@@ -21,7 +21,7 @@ public class PacientController {
     }
     @GetMapping
     public Page<DataListingPacientDto> get(Pageable pagination) {
-        return repository.findAllByActiveTrue(pagination).map(DataListingPacientDto::new);
+        return repository.findAll(pagination).map(DataListingPacientDto::new);
     }
 
     @PutMapping
