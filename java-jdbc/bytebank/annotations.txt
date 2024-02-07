@@ -1,0 +1,3 @@
+Conexão com o banco utilizando a biblioteca mysql-connector-java
+
+Será utilizado factory
