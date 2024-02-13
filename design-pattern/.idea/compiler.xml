@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="singleton" />
         <module name="builder" />
+        <module name="factory-method" />
+        <module name="prototype" />
       </profile>
     </annotationProcessing>
   </component>

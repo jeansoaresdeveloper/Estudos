@@ -1,0 +1,29 @@
+Intenção oficial
+Especificar os tipos de objetos a serem criados usando uma instância-protótipo
+e criar novos objetos pela cópia desse protótipo.
+
+Visão Geral do Padrão Prototype
+. O tipo de objeto a ser criado é determinado pelo objeto protótipo
+. É tipicamente usado para evitar a recriação de objetos "caros" -> Caros = Complexos de serem construídos ou
+objetos caros computacionalmente. Ex.: Uma objeto que se conecta em uma base de dados e armazena uma grande
+quantidade de dados.
+. Ajuda a evitar a explosão de subclasses
+. Pode (ou não) manter um registro de objetos protótipo em um objeto separado
+. Geralmente é criado apenas com um método "clone" dentro do objeto protótipo
+. O método clone pode gerar uma "shallow" ou "deep" copy do objeto protótipo
+. Evita que o cliente conheça a classe que está criando os objetos
+
+Aplicabilidade
+. Use o padrão prototype quando precisar que seu código não dependa de classes concretas para a criação de novos
+objetos.
+. Use o padrão prototype quando quiser evitar explosão de subclasses para objetos muito similares.
+. Use o padrão prototype para evitar a recriação de objetos "caros"
+
+Consequências
+BOM
+. Oculta as classes concretas do código cliente
+. Ajuda na criação de objetos caros ou complexos
+. Evita a explosão de subclasses
+
+RUIM
+. Clonar objetos que tem referências para outros objetos pode ser super complexo
