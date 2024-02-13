@@ -10,6 +10,7 @@
         <module name="builder" />
         <module name="factory-method" />
         <module name="prototype" />
+        <module name="abstract-factory" />
       </profile>
     </annotationProcessing>
   </component>
