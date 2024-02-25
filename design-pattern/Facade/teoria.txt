@@ -1,0 +1,23 @@
+Facade - Estrutural
+Intenção oficial
+Façade (Fachada) é um padrão de projeto estrutural que tem a intenção de
+fornecer uma interface unificada para um conjunto de interfaces em um subsistema. Facade define
+uma interface de nível mais alto que torna o subsistema o mais fácil de ser usado.
+
+O Façade é o padrão mais simples de todos. Ele tem a intenção de facilitar a vida do código
+cliente ao criar um objeto de fachada para um sistema mais complexo.
+
+Aplicabilidade
+. Você quer disponilizar uma interface mais simples para um sistema complexo
+. Você quer criar pontos de entrada para determinadas partes do sistema, como serviços externos,
+camadas da aplicação e objetos complexos dentro em determinadas partes do código.
+
+Consequências
+BOM
+. Isola o código complexo do código cliente
+. Facilita o uso do sistema
+. Cria pontos de entrada para camadas da aplicação e serviços de terceiros
+
+RUIM
+. O objeto Facade se torna facilmente uma "God Class" (Use fachadas adicionais se perceber que isso está ocorrendo
+no seu código).
