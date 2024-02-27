@@ -16,6 +16,7 @@
         <module name="factory-method" />
         <module name="Proxy" />
         <module name="Flyweight" />
+        <module name="Command" />
         <module name="builder" />
         <module name="Strategy" />
         <module name="Bridge" />
