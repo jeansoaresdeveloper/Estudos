@@ -1,0 +1,25 @@
+Observer - Comportamental
+
+Intenção Oficial
+Define uma dependência um para muitos entre objetos, de modo que, quando um objeto muda de estado,
+todos os seus dependentes são automaticamente notificados e atualizados.
+
+Sobre o Observer
+. Implementando com dois tipos de objetos: objetos observaveis(Observable) e objetos observadores(Observer)
+. Objetos observáveis(Observable) têm uma referência para todos os seus observadores. Isso torna possível
+adicionar, remover e notificar todos os observadores quando seu estado muda
+. Objetos observadores (Observer) devem ter meios de receber notificação de seus Observáveis. Geralmente isso é
+feito com apenas um método.
+
+Aplicabilidade
+Use o Observer quando:
+. Você precisa notificar vários objetos sobre a mudança de estado de outro(s) objeto(s)
+
+Consequências
+BOM
+. Usa o SRP e OCP
+. Facilita a manutenção entre objetos em tempo de execução
+
+RUIM
+. Pode ser complexo ou impossível manter a ordem em que as notificações
+são enviadas

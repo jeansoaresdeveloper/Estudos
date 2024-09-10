@@ -1,0 +1,46 @@
+Padrão comportamental
+
+Cadeia de Responsabilidades
+
+Intenção oficial ->
+
+Evita o acoplamento do remetente de uma solicitação ao seu destinatário, dando a mais de um objeto
+a chance de tratar a solicitação. Encadeia os objetos receptores e passa a solicitação ao longo da cadeia
+até que um objeto a trate.
+
+Utilização ->
+. É usado quando uma requisição precisa passar por uma sequência de operações até ser totalmente tratada.
+. Desacopla quem envia de quem vai tratar a requisição.
+. É muito usado com requisições HTTP.
+. Permite que um objeto trate a requisição e chame o próximo objeto da cadeia.
+. Permite que um objeto não trate a requisição e chame o próximo objeto da cadeia.
+. Permite que um objeto trate a requisição e finalize a cadeia.
+. Permite que um objeto não trate a requisição e finalize a cadeia.
+. O cliente pode iniciar a requisição de qualquer objeto caso necessário.
+
+Se faz com uma interface ou classe abstrata.
+Um Handler ->
+Nessa temos um atributo de próximo, um método para tratar a requisição, e um para adicionar um próximo
+O tratamento das requisições se faz pelas filhas desse Handler, e a chamada do próximo também.
+
+Aplicabilidade
+.Quando seu sistema necessitar processar uma requisição em várias etapas diferentes e você não quer criar uma ordem
+rígida para o processamento. O chain of responsibility permite que você altere a ordem dos objetos na cadeia facilmente
+(mesmo assim, mantendo uma ordem específica).
+
+. Você quer aplicar o princípio da responsibilidade única para tratamento de dados da requisição. Cada objeto fica
+responsável por tratar a parte que lhe couber.
+
+. Você quer permitir que os objetos responsáveis pelo tratamento de requisição possam variar em tempo de execução.
+
+Consequências
+Bom ->
+. Aplica o princípio da responsabilidade única(SRP)
+. Aplica o princípio do aberto e fechado(OCP)
+. Permite que você altere a cadeia de objetos e a ordem das chamadas facilmente.
+
+Ruim ->
+. É comum uma requisição passar por toda a cadeia e não ser tratada.
+
+
+É possível a hierarquia conhecer seu próximo.
